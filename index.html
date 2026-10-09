@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="A little birthday surprise for Mishka Ayara ♡" />
+<title>A Little Birthday Surprise for Mischka Ayara ♡</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ============ OPENING SCREEN ============ -->
+<div id="opening" class="opening">
+  <div class="opening-hearts" id="openingHearts" aria-hidden="true"></div>
+  <div class="opening-content">
+    <p class="opening-eyebrow">A little something, just for you ♡</p>
+    <h1 class="opening-title">A Little Birthday Surprise for Mischka Ayara ♡</h1>
+
+    <div class="gift-box" id="giftBox" aria-hidden="true">
+      <div class="gift-lid"></div>
+      <div class="gift-body">
+        <div class="gift-ribbon-v"></div>
+        <div class="gift-ribbon-h"></div>
+      </div>
+      <div class="gift-bow">🎀</div>
+    </div>
+
+    <p class="opening-cute">A tiny world is waiting inside…</p>
+    <button class="big-btn" id="openSurpriseBtn">Open Your Surprise, Kuchi! ♡</button>
+  </div>
+</div>
+
+<!-- ============ MAIN SITE ============ -->
+<div id="site" class="site hidden">
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-brand">Mischka's Birthday ♡</span>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link" href="#home"><span class="nav-icon">🏠</span><span>Home</span></a></li>
+        <li><a class="nav-link" href="#letter"><span class="nav-icon">💌</span><span>My Letter</span></a></li>
+        <li><a class="nav-link" href="#gallery"><span class="nav-icon">📸</span><span>Memories</span></a></li>
+        <li><a class="nav-link" href="#video"><span class="nav-icon">🎬</span><span>Video</span></a></li>
+        <li><a class="nav-link" href="#cake"><span class="nav-icon">🎂</span><span>Cake</span></a></li>
+        <li><a class="nav-link" href="#balloons"><span class="nav-icon">🎈</span><span>Balloons</span></a></li>
+        <li><a class="nav-link" href="#game"><span class="nav-icon">🎮</span><span>Game</span></a></li>
+        <li><a class="nav-link" href="#final"><span class="nav-icon">💗</span><span>Surprise</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Home greeting -->
+    <section id="home" class="section home-greeting">
+      <div class="greeting-card">
+        <div class="greeting-sparkle">✨</div>
+        <h1 class="greeting-title">Happy 11th Birthday, Mischka Ayara! 🎂💗</h1>
+        <p class="greeting-sub">Hi, my Choongkook! ♡ Welcome to your very own birthday webpage! I made this little corner of the internet especially for you. Come inside and discover all the little surprises waiting for you!</p>
+        <p class="greeting-invite">There's so much waiting for you here. Explore everything! 🌷</p>
+      </div>
+    </section>
+
+    <!-- Letter -->
+    <section id="letter" class="section">
+      <h2 class="section-title">My Letter to You 💌</h2>
+      <p class="section-sub">The most important little note I've ever written. ♡</p>
+
+      <div class="envelope-wrap" id="letterClosed">
+        <button class="envelope" id="openLetterBtn" aria-label="Open my letter">
+          <span class="envelope-flap"></span>
+          <span class="envelope-body"><span class="envelope-seal">♡</span></span>
+        </button>
+        <button class="big-btn" id="openLetterBtn2">Open My Letter ♡</button>
+      </div>
+
+      <article class="letter-card hidden" id="letterOpen">
+        <div class="letter-flowers" aria-hidden="true">🌷 🌸 🌷</div>
+        <h3 class="letter-heading" id="letterHeading"></h3>
+        <div class="letter-body" id="letterBody"></div>
+        <div class="letter-signature">
+          <p id="letterSig1"></p>
+          <p class="signature-line"><span class="animated-flower" aria-hidden="true">🌼</span> <span id="letterSig2"></span></p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+      <h2 class="section-title">Our Little Memories ♡</h2>
+      <p class="section-sub">Until we can make more memories together, here are some little pieces of the ones I treasure. ♡</p>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <!-- Video -->
+    <section id="video" class="section">
+      <h2 class="section-title">A Little Video Just for You! 🎀</h2>
+      <p class="section-sub" id="videoCaption"></p>
+      <div class="video-frame" id="videoFrame"></div>
+    </section>
+
+    <!-- Cake -->
+    <section id="cake" class="section">
+      <h2 class="section-title">Make a Birthday Wish! ✨</h2>
+      <p class="section-sub">Eleven little candles, one for each wonderful year of you. ♡</p>
+      <div class="cake-stage" id="cakeStage">
+        <div class="cake">
+          <div class="candles" id="candles"></div>
+          <div class="cake-top"></div>
+          <div class="cake-mid"></div>
+          <div class="cake-bottom"></div>
+          <div class="cake-plate"></div>
+        </div>
+      </div>
+      <div class="cake-buttons" id="cakeButtons">
+        <button class="big-btn" id="blowOneBtn">Blow One Candle 🕯️</button>
+        <button class="ghost-btn" id="blowAllBtn">Blow Them All! ✨</button>
+      </div>
+      <div class="cake-celebrate hidden" id="cakeCelebrate">
+        <p class="celebrate-msg">Make the biggest wish, Choongkook! You deserve so many beautiful things. ♡</p>
+        <button class="big-btn" id="resetCakeBtn">Light the Candles Again 🎂</button>
+      </div>
+    </section>
+
+    <!-- Balloon Popping Game -->
+    <section id="balloons" class="section">
+      <h2 class="section-title">Pop All 11 Birthday Balloons! 🎈</h2>
+      <p class="section-sub">Tap each balloon to see what's hiding inside. Find all 11! ♡</p>
+
+      <div class="balloon-progress">
+        <span id="balloonCounter">0 / 11 popped</span>
+      </div>
+
+      <div class="balloon-stage" id="balloonStage">
+        <div class="balloon-confetti-layer" id="balloonConfettiLayer" aria-hidden="true"></div>
+      </div>
+
+      <div class="balloon-win hidden" id="balloonWin">
+        <p class="balloon-win-title">🎉 You popped all 11! 🎉</p>
+        <p class="balloon-win-msg">Happy Birthday, Mischka Ayara! 🎂💗</p>
+        <button class="big-btn" id="balloonResetBtn">Play Again 🎈</button>
+      </div>
+    </section>
+
+    <!-- Memory game -->
+    <section id="game" class="section">
+      <h2 class="section-title">A Tiny Matching Game 🎮</h2>
+      <p class="section-sub">Find all the pairs — take your time! ♡</p>
+      <div class="game-hud">
+        <span>Moves: <strong id="movesCount">0</strong></span>
+        <button class="ghost-btn" id="restartGameBtn">Restart 🔄</button>
+      </div>
+      <div class="game-grid" id="gameGrid"></div>
+      <div class="game-win hidden" id="gameWin">
+        <p id="gameWinMsg"></p>
+        <button class="big-btn" id="playAgainBtn">Play Again ♡</button>
+      </div>
+    </section>
+
+    <!-- Final -->
+    <section id="final" class="section final-section">
+      <h2 class="section-title">Before You Go, One Last Surprise… 💗</h2>
+      <p class="section-sub">Tap the lantern and watch the sky light up. 🌙</p>
+
+      <div class="sky-stage" id="skyStage">
+        <div class="sky-stars" id="skyStars" aria-hidden="true"></div>
+
+        <button class="lantern lantern-solo" id="firstLanternBtn" aria-label="Light the first lantern">
+          <span class="lantern-glow"></span>
+          <span class="lantern-body">
+            <span class="lantern-flame"></span>
+          </span>
+          <span class="lantern-base"></span>
+        </button>
+
+        <p class="sky-hint" id="skyHint">tap the lantern ♡</p>
+      </div>
+
+      <div class="sky-collection hidden" id="skyCollection">
+        <div class="sky-lanterns" id="skyLanterns"></div>
+        <p class="sky-instruction">Tap any lantern to read a wish ♡</p>
+      </div>
+
+      <!-- Lantern read modal -->
+      <div class="lantern-modal hidden" id="lanternModal">
+        <div class="lantern-modal-inner">
+          <button class="lantern-modal-close" id="lanternModalClose" aria-label="Close">✕</button>
+          <p class="lantern-modal-text" id="lanternModalText"></p>
+        </div>
+      </div>
+
+      <!-- Finale -->
+      <div class="sky-finale hidden" id="skyFinale">
+        <div class="finale-sky" aria-hidden="true">
+          <div class="finale-glow"></div>
+        </div>
+        <div class="finale-card">
+          <p class="finale-line1" id="finaleLine1"></p>
+          <p class="finale-line2" id="finaleLine2"></p>
+          <p class="finale-line3" id="finaleLine3"></p>
+          <p class="finale-sig" id="finaleSig"></p>
+        </div>
+        <p class="final-sig">Made with love, just for you ♡</p>
+        <button class="big-btn" id="replayBtn">Replay from the Beginning ♡</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Made with love, just for Kuchi ♡</p>
+  </footer>
+</div>
+
+<div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+
+<!-- Lightbox -->
+<div class="lightbox hidden" id="lightbox">
+  <div class="lightbox-inner" id="lightboxInner">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <div class="lightbox-media" id="lightboxMedia"></div>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Next">›</button>
+  </div>
+</div>
+
+<script src="js/content.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
